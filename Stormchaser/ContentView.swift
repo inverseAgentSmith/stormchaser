@@ -12,7 +12,7 @@ struct ContentView: View {
         ZStack {
             LinearGradient(colors: [.blue, .gray, .orange],
                            startPoint: .topLeading ,
-                            endPoint: .bottomTrailing)
+                           endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -32,12 +32,53 @@ struct ContentView: View {
                     
                     Text("26°")
                         .foregroundColor(.white)
-                        .font(.system(size: 70, weight: .light, design: .default))
+                        .font(.system(size: 70,
+                                      weight: .light,
+                                      design: .default))
                     
-                    Text("Git test")
+                    HStack {
+                        VStack {
+                            Text("TUE")
+                                .foregroundColor(.white)
+                                .font(.system(size: 16,
+                                              weight: .medium,
+                                              design: .default))
+                            Image(systemName: "wind")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                            
+                            Text("19°")
+                                .font(.system(size: 28,
+                                              weight: .semibold,
+                                              design: .default))
+                                .foregroundColor(.white)
+                            
+                        }
+                        
+                        VStack {
+                            Text("WED")
+                                .foregroundColor(.white)
+                                .font(.system(size: 16,
+                                              weight: .medium,
+                                              design: .default))
+                            Image(systemName: "cloud.rain.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                            
+                            Text("14°")
+                                .font(.system(size: 28,
+                                              weight: .semibold,
+                                              design: .default))
+                                .foregroundColor(.white)
+                            
+                        }
+                    }
+                    Spacer()
                 }
-                Spacer()
-                
             }
         }
     }
