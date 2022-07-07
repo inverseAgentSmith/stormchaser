@@ -33,6 +33,8 @@ struct ContentView: View {
                     Text("26°")
                         .foregroundColor(.white)
                         .font(.system(size: 70, weight: .light, design: .default))
+                    
+                    Text("Git test")
                 }
                 Spacer()
                 
