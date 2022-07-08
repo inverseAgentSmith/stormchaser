@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5B1E546287851BC00B3F5B8 /* ChangeDayTimeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1E545287851BB00B3F5B8 /* ChangeDayTimeButton.swift */; };
+		B5B1E5482878593F00B3F5B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1E5472878593F00B3F5B8 /* ContentView.swift */; };
 		B5EB2F0C2875A10E00F2D669 /* StormchaserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB2F0B2875A10E00F2D669 /* StormchaserApp.swift */; };
-		B5EB2F0E2875A10E00F2D669 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB2F0D2875A10E00F2D669 /* ContentView.swift */; };
 		B5EB2F102875A11100F2D669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EB2F0F2875A11100F2D669 /* Assets.xcassets */; };
 		B5EB2F132875A11100F2D669 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EB2F122875A11100F2D669 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5B1E545287851BB00B3F5B8 /* ChangeDayTimeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDayTimeButton.swift; sourceTree = "<group>"; };
+		B5B1E5472878593F00B3F5B8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../.Trash/ContentView.swift; sourceTree = "<group>"; };
 		B5EB2F082875A10E00F2D669 /* Stormchaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormchaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EB2F0B2875A10E00F2D669 /* StormchaserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormchaserApp.swift; sourceTree = "<group>"; };
-		B5EB2F0D2875A10E00F2D669 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5EB2F0F2875A11100F2D669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5EB2F122875A11100F2D669 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,10 +53,11 @@
 		B5EB2F0A2875A10E00F2D669 /* Stormchaser */ = {
 			isa = PBXGroup;
 			children = (
+				B5B1E5472878593F00B3F5B8 /* ContentView.swift */,
 				B5EB2F0B2875A10E00F2D669 /* StormchaserApp.swift */,
-				B5EB2F0D2875A10E00F2D669 /* ContentView.swift */,
 				B5EB2F0F2875A11100F2D669 /* Assets.xcassets */,
 				B5EB2F112875A11100F2D669 /* Preview Content */,
+				B5B1E545287851BB00B3F5B8 /* ChangeDayTimeButton.swift */,
 			);
 			path = Stormchaser;
 			sourceTree = "<group>";
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EB2F0E2875A10E00F2D669 /* ContentView.swift in Sources */,
 				B5EB2F0C2875A10E00F2D669 /* StormchaserApp.swift in Sources */,
+				B5B1E546287851BC00B3F5B8 /* ChangeDayTimeButton.swift in Sources */,
+				B5B1E5482878593F00B3F5B8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
