@@ -21,7 +21,8 @@ struct ContentView: View {
                                   weight: .medium,
                                   design: .default))
                     .foregroundColor(.white)
-                    .padding()
+                    .padding(.top, 20)
+            
                 
                 VStack (spacing: 10) {
                     Image(systemName: "cloud.sun.fill")
@@ -48,6 +49,20 @@ struct ContentView: View {
                         WeatherDayView(dayOfWeek: "SAT", weatherImage: "cloud.heavyrain.fill", temperature: 21)
                     }
                     Spacer()
+                    
+                    Button {
+                        print("tapped")
+                    } label: {
+                        Text("Change Day Time")
+                            .frame(width: 280, height: 50)
+                            .background(.white)
+                            .font(.system(size: 20,
+                                          weight: .semibold,
+                                          design: .default))
+                            .foregroundColor(.blue)
+                            .cornerRadius(10)
+                    }
+                    Spacer()
                 }
             }
         }
@@ -59,7 +74,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
 
 struct WeatherDayView: View {
     
@@ -82,7 +96,7 @@ struct WeatherDayView: View {
             
             Text("\(temperature)°")
                 .font(.system(size: 28,
-                              weight: .semibold,
+                              weight: .medium,
                               design: .default))
                 .foregroundColor(.white)
             
