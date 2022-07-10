@@ -23,15 +23,15 @@ struct ContentView: View {
                                        temperature: isNight ? 13: 26)
                 
                 HStack(spacing: 30) {
-                    WeatherDayView(dayOfWeek: "TUE", weatherImageName: "sun.max.fill", temperature: 21)
+                    WeatherDayView(dayOfWeek: isNight ? "NOW": "TUE", weatherImageName: isNight ? "moon.stars.fill": "sun.max.fill", temperature: isNight ? 13: 21)
                     
-                    WeatherDayView(dayOfWeek: "WED", weatherImageName: "cloud.sun.fill", temperature: 21)
+                    WeatherDayView(dayOfWeek: isNight ? "03": "TUE", weatherImageName: isNight ? "cloud.moon.fill": "sun.max.fill", temperature: isNight ? 10: 21)
                     
-                    WeatherDayView(dayOfWeek: "THU", weatherImageName: "cloud.fill", temperature: 21)
+                    WeatherDayView(dayOfWeek: isNight ? "04": "TUE", weatherImageName: isNight ? "moon.fill": "sun.max.fill", temperature: isNight ? 11: 21)
                     
-                    WeatherDayView(dayOfWeek: "FRI", weatherImageName: "cloud.rain.fill", temperature: 21)
+                    WeatherDayView(dayOfWeek: isNight ? "05": "TUE", weatherImageName: isNight ? "sunrise.fill": "sun.max.fill", temperature: isNight ? 12: 21)
                     
-                    WeatherDayView(dayOfWeek: "SAT", weatherImageName: "cloud.heavyrain.fill", temperature: 21)
+                    WeatherDayView(dayOfWeek: isNight ? "06": "TUE", weatherImageName: isNight ? "cloud.sun.fill": "sun.max.fill", temperature: isNight ? 13: 21)
                 }
                 .padding()
                 
